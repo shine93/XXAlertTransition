@@ -1,0 +1,6 @@
+use_frameworks!
+target 'XXAlertTransition_Tests' do
+  pod 'XXAlertTransition', :path => '../'
+  
+  
+end
