@@ -190,7 +190,7 @@ preferredContentSize = CGSize(width: 300, height: 150)
 - `XXCustomTransitionDelegate`初始化不指定`alertStyle`会有默认值`.fromCenter`
 
 ## Requirements
-注意⚠️：'XXAlertTransition' >=0.4.0 版本可正常使用
+注意⚠️：'XXAlertTransition' >=0.1.4 版本可正常使用
 
 ## Installation
 
