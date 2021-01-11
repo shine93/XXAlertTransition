@@ -12,8 +12,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 注意⚠️：'XXAlertTransition' >=0.4.0 版本可正常使用
 
+![alert转场效果图](https://github.com/shine93/XXAlertTransition/blob/main/Example/alertDemo.gif)
 
-使用：
+使用Demo：
+1. 创建一个用来present的控制器。
 ```
 import UIKit
 import XXAlertTransition
@@ -111,7 +113,7 @@ class XXAlertViewController: UIViewController, XXTransitionProtocol {
 ```
 
 
-自定义一个弹窗：
+2. 自定义一个弹窗：
 ```
 import Foundation
 import UIKit
