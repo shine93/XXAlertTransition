@@ -9,9 +9,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-注意⚠️：'XXAlertTransition' >=0.4.0 版本可正常使用
-
 ![alert转场效果图](https://github.com/shine93/XXAlertTransition/blob/main/Example/alertDemo.gif)
 
 使用Demo：
@@ -190,6 +187,10 @@ class XXAlertDemoVC: XXCustomAlertVC {
 view.layer.cornerRadius = 10
 preferredContentSize = CGSize(width: 300, height: 150)
 ```
+
+## Requirements
+注意⚠️：'XXAlertTransition' >=0.4.0 版本可正常使用
+
 ## Installation
 
 XXAlertTransition is available through [CocoaPods](https://cocoapods.org). To install
