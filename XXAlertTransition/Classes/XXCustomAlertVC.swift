@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-public class XXCustomAlertVC: UIViewController {
-    public override func viewDidLoad() {
+open class XXCustomAlertVC: UIViewController {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         view.layer.cornerRadius = 10
