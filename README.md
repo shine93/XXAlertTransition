@@ -22,7 +22,7 @@ pod 'XXAlertTransition'
 
 ## Author
 
-weimengxue, weimengxue@kuaishou.com
+weimengxue, shine9328@qq.com
 
 ## License
 
