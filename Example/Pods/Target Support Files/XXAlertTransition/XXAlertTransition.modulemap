@@ -1,0 +1,6 @@
+framework module XXAlertTransition {
+  umbrella header "XXAlertTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}
