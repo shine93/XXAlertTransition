@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum XXTransitionStyle {
+public enum XXTransitionStyle {
     case scaleFromCenter
     case scaleBig
     case fromCenter
@@ -19,17 +19,17 @@ public class XXCustomTransitionDelegate: NSObject, UIViewControllerTransitioning
 
     var alertStyle: XXTransitionStyle = .fromCenter
 
-    init(alertStyle: XXTransitionStyle = .fromCenter) {
+    public init(alertStyle: XXTransitionStyle = .fromCenter) {
         super.init()
         self.alertStyle = alertStyle
     }
 
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+    public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         return XXPresentationController(presentedViewController: presented, presenting: presenting)
     }
 
     //负责present时的动画效果
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         let animator = XXCustomAnimator()
         animator.isPresentation = true
         animator.transitionStyle = alertStyle
@@ -37,7 +37,7 @@ public class XXCustomTransitionDelegate: NSObject, UIViewControllerTransitioning
     }
 
     //负责dismiss时的动画效果
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         let animator = XXCustomAnimator()
         animator.isPresentation = false
         animator.transitionStyle = alertStyle

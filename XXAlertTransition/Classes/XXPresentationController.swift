@@ -9,7 +9,7 @@
 import UIKit
 
 //XXTransitionProtocol: present的VC需要遵循
-protocol XXTransitionProtocol {
+public protocol XXTransitionProtocol {
     var customTransitionDelegate: UIViewControllerTransitioningDelegate? { get } //这个很重要，要是全局的，要不然transitionDelegete会不生效。
 }
 
@@ -17,19 +17,19 @@ public class XXPresentationController: UIPresentationController {
 
     let dimmingView = UIView()
 
-    override var shouldPresentInFullscreen: Bool {
+    public override var shouldPresentInFullscreen: Bool {
         return false
     }
 
-    override var adaptivePresentationStyle: UIModalPresentationStyle {
+    public override var adaptivePresentationStyle: UIModalPresentationStyle {
         return .overCurrentContext
     }
 
-    override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
+    public override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
         return container.preferredContentSize
     }
 
-    override var frameOfPresentedViewInContainerView: CGRect {
+    public override var frameOfPresentedViewInContainerView: CGRect {
         guard let containerView = containerView else {
             return CGRect()
         }
@@ -43,7 +43,7 @@ public class XXPresentationController: UIPresentationController {
         return presentedViewFrame
     }
 
-    override func presentationTransitionWillBegin() {
+    public override func presentationTransitionWillBegin() {
         dimmingView.backgroundColor = UIColor.black
         dimmingView.alpha = 0.0
         containerView?.insertSubview(dimmingView, at: 0)
@@ -57,7 +57,7 @@ public class XXPresentationController: UIPresentationController {
 
     }
 
-    override func dismissalTransitionWillBegin() {
+    public override func dismissalTransitionWillBegin() {
         guard let coordinator = presentedViewController.transitionCoordinator else {
             return
         }
@@ -68,7 +68,7 @@ public class XXPresentationController: UIPresentationController {
         }
     }
 
-    override func containerViewWillLayoutSubviews() {
+    public override func containerViewWillLayoutSubviews() {
         super.containerViewWillLayoutSubviews()
         guard let containerView = containerView else {
             return

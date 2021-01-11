@@ -13,11 +13,11 @@ public class XXCustomAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     var isPresentation = false
     var transitionStyle: XXTransitionStyle = .fromCenter
 
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.25
     }
 
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let containerView = transitionContext.containerView
 
         if isPresentation {
