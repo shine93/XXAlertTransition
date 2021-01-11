@@ -1,0 +1,16 @@
+PODS:
+  - XXAlertTransition (0.1.0)
+
+DEPENDENCIES:
+  - XXAlertTransition (from `../`)
+
+EXTERNAL SOURCES:
+  XXAlertTransition:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XXAlertTransition: 9ae0ef1f45f43bf3a33e67ed7c02a5b6f0dd1986
+
+PODFILE CHECKSUM: 41dac4c204458a0b626fb8f134a520e8f4fcc448
+
+COCOAPODS: 1.9.3
