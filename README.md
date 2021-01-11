@@ -187,6 +187,7 @@ class XXAlertDemoVC: XXCustomAlertVC {
 view.layer.cornerRadius = 10
 preferredContentSize = CGSize(width: 300, height: 150)
 ```
+- `XXCustomTransitionDelegate`初始化不指定`alertStyle`会有默认值`.fromCenter`
 
 ## Requirements
 注意⚠️：'XXAlertTransition' >=0.4.0 版本可正常使用
